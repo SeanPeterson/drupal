@@ -1,0 +1,19 @@
+name = drupal theme
+description = Task 1 Interview Test.
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = assets/css/style.css
+stylesheets[all][] = layout.css
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+
+regions[banner] = Banner
+regions[event] = Event
+regions[involved] = Involved
+regions[mission] = Mission
+regions[members] = Members
+regions[blog] = Blog
