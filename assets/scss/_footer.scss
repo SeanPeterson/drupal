@@ -1,0 +1,30 @@
+.b-footer{
+	width: 100%;
+	display: inline-block;
+}
+
+.b-footer--center{
+	display: block;
+	max-width: $global-width;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.b-share-buttons{
+	font-size: 1.2rem;
+
+	li{
+		a{color: $primary-color;}
+	}
+}
+
+.b-share-buttons--horizontal{
+	li{
+		display: inline-block;
+		a{padding: 0 1rem 0 1rem;}
+	}
+}
+
+.b-footer__signature{
+	color: $primary-color;	
+}

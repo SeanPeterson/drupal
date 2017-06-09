@@ -1,0 +1,29 @@
+.b-header{
+	width: 100%;
+	display: inline-block;
+}
+
+.b-nav{
+	.b-nav__nav-left{
+		float: left;
+
+		a img{height: auto; max-width: 10rem;}
+	}
+
+	.b-nav__nav-right{
+		float: right;
+	}
+
+	.b-nav__nav-elements{
+		li{
+			display: inline-block; 
+			a{text-decoration: none; color: $black; padding: 0 1rem 0 1rem;}
+		}
+	}
+}
+
+.b-nav--header{
+	display: block;
+	max-width: $global-width;
+	margin: 0 auto;
+}

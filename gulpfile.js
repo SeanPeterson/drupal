@@ -69,7 +69,15 @@ gulp.task('images', ['clean'], function() {
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.images, ['images']);
+  // Watch .scss files
+  gulp.watch('./assets/scss/**/*.scss', ['styles']);
 });
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['watch', 'scripts', 'images']);
+
+//move font-awesome module to fonts directory
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('./assets/fonts'))
+})

@@ -73,16 +73,18 @@
  */
 ?>
 
-<header>
-  <div class="header-left">
-    <img src="" alt="company logo" />
-  </div>
-  <div class="header-right">
-    <ul>
-      <li><a href="#">About Open Charity</a></li>
-      <li><a href="#">The Blog</a></li>
-      <li><a href="#">Join Us</a></li>
-    </ul>
+<header class="b-header">
+  <div class="b-nav b-nav--header">
+    <div class="b-nav__nav-left">
+      <a href="#"><img src="<?php echo path_to_theme(); ?>/assets/images/OpenCharity.png" alt="company logo" /></a>
+    </div>
+    <div class="b-nav__nav-right">
+      <ul class="b-nav__nav-elements">
+        <li><a href="#">About Open Charity</a></li>
+        <li><a href="#">The Blog</a></li>
+        <li><a href="#">Join Us</a></li>
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -95,3 +97,16 @@
 <?php endif; ?>
 
 <?php print render($page['content']); ?>
+
+<footer class="b-footer">
+  <div class="b-footer--center">
+    <ul class="b-share-buttons b-share-buttons--horizontal">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="b-footer--center">
+    <p>This site was built as a collaberation between <span class="b-footer__signature">Manifesto Digital</span> and <span class="b-footer__signature">Compucorp</span></p>
+  </div>
+</footer>
