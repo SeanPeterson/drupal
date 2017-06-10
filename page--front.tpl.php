@@ -96,7 +96,7 @@
 </div>
 <?php endif; ?>
 
-<?php print render($page['content']); ?>
+<?php print render($page['event']); ?>
 
 <footer class="b-footer">
   <div class="b-footer--center">
