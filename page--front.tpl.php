@@ -95,9 +95,80 @@
   </div>
 </div>
 <?php endif; ?>
-
-<?php print render($page['event']); ?>
-
+<section class="b-hero b-hero--background">
+  <div class="b-hero__hero-content">
+    <h1>SHARING IDEAS FOR CHARITIES</h1>
+    <p>Many charities' goals are similar, as is the functionality we require, but little <br> shared working takes place.</p>
+    <p>By working together, driving shared areas of interest and influencing open source developments we can <br> bring efficiencies, improve the digital experience for our users, and have great impact.</p>
+    <p>Together we can make a bigger diference.</p>
+  </div>
+</section>
+<section class="b-latest-event b-latest-event--background">
+  <div class="latest-event-wrapper">
+    <div class="large-8">
+      <?php print render($page['event']); ?>
+    </div>
+    <a class="b-btn-full b-btn-full--register" href="#">REGISTER</a>
+  </div>
+</section>
+<section class="call-to-action-section">
+  <h2>GET INVOLVED</h2>
+  <div class="b-call-to-action large-3">
+    <img class="b-call-to-action__action-image" src="<?php echo path_to_theme(); ?>/assets/images/mettings.png" alt="call to action icon" />
+    <h3>WE DO MEETINGS</h3>
+    <p>We organize our meetings through the OpenCharity<br>MeetUp group</p>
+    <a class="b-btn" href="#">MEETUP GROUP</a>
+  </div>
+  <div class="b-call-to-action large-3">
+    <img class="b-call-to-action__action-image" src="<?php echo path_to_theme(); ?>/assets/images/communicate.png" alt="call to action icon" />
+    <h3>WE COMMUNICATE</h3>
+    <p>OpenCharity have a slack group for<br>daily communication</p>
+    <a class="b-btn" href="#">SLACK GROUP</a>
+  </div>
+  <div class="b-call-to-action large-3">
+    <img class="b-call-to-action__action-image" src="<?php echo path_to_theme(); ?>/assets/images/collaberate.png" alt="call to action icon" />
+    <h3>WE COLLABERATE</h3>
+    <p>We have a Wiki group set up to share tools<br>and documents</p>
+    <a class="b-btn" href="#">WIKI GROUP</a>
+  </div>
+</section>
+<section class="about-section">
+  <div class="about-wrapper">
+    <h2>OUR MISSION</h2>
+    <p>Charities and Partners collaberating and sharing open solutions and ideas to create value in the digital space.</p>
+    <h3>If you are a charity or a supplier, we are ready to welcome you.</h3>
+    <div class="b-mission-statement b-mission-statement--section">
+      <img class="b-mission-statement__icon" src="<?php echo path_to_theme(); ?>/assets/images/bulb.png" alt="mission icon" />
+      <h4 class="primary-color">We help charities</h4>
+      <p>share knowledge and working practice to make<br>the best technology choices.</p>
+    </div>
+    <div class="b-mission-statement b-mission-statement--section b-mission-statement--middle">
+      <img class="b-mission-statement__icon" src="<?php echo path_to_theme(); ?>/assets/images/people.png" alt="mission icon" />
+      <h4 class="primary-color">We help charities</h4>
+      <p>share knowledge and working practice to make<br>the best technology choices.</p>
+    </div>
+    <div class="b-mission-statement b-mission-statement--section">
+      <img class="b-mission-statement__icon" src="<?php echo path_to_theme(); ?>/assets/images/thumb.png" alt="mission icon" />
+      <h4 class="primary-color">We help charities</h4>
+      <p>share knowledge and working practice to make<br>the best technology choices.</p>
+    </div>
+  </div>
+</section>
+<div class="divider">
+</div>
+<section class="member-section">
+  <div class="member-wrapper">
+    <h2>Our Members</h2>
+    <img class="member-logo" src="" alt="member-logo" />
+  </div>
+</section>
+<section class="blog-section">
+  <div class="background-one"></div>
+  <div class="background-two"></div>
+  <div class="blog-wrapper">
+    <h2>BLOG</h2>
+  </div>
+</section>
 <footer class="b-footer">
   <div class="b-footer--center">
     <ul class="b-share-buttons b-share-buttons--horizontal">

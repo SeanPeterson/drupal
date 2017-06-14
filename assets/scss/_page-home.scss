@@ -1,0 +1,138 @@
+.b-hero{
+	.b-hero__hero-content{
+		text-align: center;
+		color: white;
+		padding-top: 5rem;
+	}
+}
+
+.b-hero--background{
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../images/hero.jpg');
+    background-image: url('../images/hero.jpg'), linear-gradient(#232326, #232326, #232326, #453D37, #635D56, #483F36, #3E352E, #232326, #232326, #232326, #232326, #232326, #232326, #202225);
+    background-size: cover;
+    min-height: 27rem;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.latest-event-wrapper{
+	max-width: $global-width;
+	margin: 0 auto;
+}
+
+.b-btn-full--register{
+	float: right;
+}
+
+.b-latest-event{
+	overflow: auto;
+	min-width: 20rem;
+
+	.latest-event{
+		max-width: $global-width;
+		margin: 0 auto;
+		width: 100%;
+
+		h4{margin: 0;}
+	}
+}
+
+.b-latest-event--background{
+	background: $background-one;
+}
+
+.call-to-action-section{
+	max-width: $global-width;
+	margin: 0 auto;
+	text-align: center;
+	overflow: auto;
+	min-height: 25rem;
+}
+
+.b-call-to-action{
+	.b-call-to-action__action-image{max-width: 8rem;}
+}
+
+.about-section{
+	background: $background-one;
+	overflow: auto;
+	min-height: 25rem;
+}
+
+.about-wrapper{
+	max-width: $global-width;
+	margin: 0 auto;
+	text-align: center;
+	overflow: auto;
+	min-height: 20rem;
+}
+
+.b-mission-statement{
+	margin-top: 1.5rem;
+	.b-mission-statement__icon{
+		max-width: 5rem; 
+		height: auto;
+		margin-top: -1.5rem;
+		border: 0.5rem solid white;
+		border-radius: 5rem;
+	}
+}
+
+.b-mission-statement--section{
+	background: $white;
+	width: 30%;
+	float: left;
+	border-radius: 0.5rem;
+}
+
+.b-mission-statement--middle{
+	margin: 1.5rem 3.33%;
+}
+
+.member-section{
+	background: $background-one;
+	overflow: auto;
+	min-height: 25rem;
+
+	.member-wrapper{
+		max-width: $global-width;
+		margin: 0 auto;
+		text-align: center;
+		overflow: auto;
+		min-height: 20rem;
+	}
+}
+
+.blog-section{
+	overflow: auto;
+	min-height: 25rem;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	.background-one{
+		background: $background-one; 
+		min-height: 10rem;
+	}
+	.background-two{
+		background: $background-two;
+		min-height: 15rem; 
+	}
+
+	.blog-wrapper{
+		max-width: $global-width;
+		margin: 0 auto;
+		background: $white;
+		min-height: 15rem;
+		position: absolute;
+		z-index: 999;
+		top: 20%;
+		left: 0;
+		right: 0;
+	}
+}
