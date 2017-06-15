@@ -88,6 +88,14 @@
   </div>
 </header>
 
+<div class="container">
+<div class="row">
+  <div class="col-sm-6">col-8</div>
+  <div class="col-4">col-4</div>
+</div>
+</div>
+
+
 <?php if($messages): ?>
 <div id="messages">
   <div class="section clearfix">
