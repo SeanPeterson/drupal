@@ -2,6 +2,37 @@ body{
 	margin: 0;
 }
 
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-stack;
+  color: $black;
+}
+
+h3{font-size: 1em;}
+h1{font-size: 3em;}
+
+p{
+	font-family: $paragraph-font-stack;
+	font-size: 0.9em;
+	color: $black;
+}
+
+a{
+	text-decoration: none;
+	color: $primary-color;
+}
+
+a:hover{
+	color: $primary-hover;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
 .primary-color{
 	color: $primary-color;
 }
@@ -13,25 +44,101 @@ body{
 	padding: 0.5rem 1.5rem;
 }
 
+.b-btn:hover{
+	background: $primary-color;
+	color: $white;
+	transition: all 0.3s ease;
+}
+
+.b-btn-full:hover{
+	color: $white;
+	background: $primary-hover;
+	transition: all 0.3s ease; 
+}
+
 .b-btn-full{
 	text-decoration: none;
 	color: $white;
 	background: $primary-color;
-	padding: 0.5rem 1rem;
+	padding: 0.6rem 1rem;
+	margin-top: 2rem;
+}
+
+.small-hide{
+	@media(max-width: $mobile-size){
+		display: none;
+	}
 }
 
 .large-3{
 	float: left;
 	width: 33.33%;
+
+	@media(max-width: $mobile-size){
+		float: none;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
 }
 
 .large-8{
 	float: left;
 	width: 66.66%;
+
+	@media(max-width: $mobile-size){
+		float: none;
+		width: 100%;
+	}
+}
+
+.column-5{
+	width: 20%;
+	float: left;
+
+	@media(max-width: $mobile-size){
+		float: none;
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+}
+
+.column-5:nth-of-type(6){
+	clear: left;
+}
+
+.column-4{
+	width: 25%;
+	float: left;
+
+	@media(max-width: $tablet-size){
+		width: 50%;
+		float: left;
+	}
+
+	@media(max-width: $mobile-size){
+		float: none;
+		width: 100%;
+	}
+}
+
+.column-4:nth-of-type(5){
+	clear: left;
+}
+
+.column-1-12{
+	width: 5%;
+	float: left;
 }
 
 .divider{
 	background: $background-one;
 	padding: 1rem 0;
-	border-bottom: solid 2px $black;
+	hr{
+		color: $lightGrey;
+		max-width: $global-width;
+	}
+}
+
+.hide{
+	display: none;
 }

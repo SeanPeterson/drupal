@@ -2,7 +2,12 @@
 	width: 100%;
 	display: inline-block;
 	background: $background-three;
-	color: #9095a2;
+	p{color: #9095a2};
+	a:hover{
+		color: $primary-hover;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
 }
 
 .b-footer--center{
@@ -10,6 +15,12 @@
 	max-width: $global-width;
 	margin: 0 auto;
 	text-align: center;
+}
+
+@media(max-width: $tablet-size){
+	.b-footer--center{
+		margin: $mobile-margin;
+	}
 }
 
 .b-share-buttons{

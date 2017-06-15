@@ -1,13 +1,26 @@
 //Page constraints
-$global-width: 70rem;
+$global-width: 77.5rem;
+$mobile-margin: 0 1rem;
+
+//dynamic variables
+$mobile-size: 630px;
+$tablet-size: 1240px;
 
 //font-awesome
 @import "node_modules/font-awesome/scss/font-awesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//fonts
+$header-font-stack: museo_sans500, Arial, Helvetica, sans-serif;
+$paragraph-font-stack: 'Open Sans', sans-serif, Arial, Helvetica;
 
 //Colours
-$primary-color: #5BC0C3; 
+$primary-color: #5BC0C3;
+$primary-hover: darken($primary-color, 10%); 
 $background-one: #F1F2F5;
 $background-two: #5D5E61;
 $background-three: #454850;
-$black: #000;
+$black: #565659;
+$grey: #979EB2;
+$lightGrey: #D9DADD;
 $white: #fff;

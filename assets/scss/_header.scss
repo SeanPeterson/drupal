@@ -1,23 +1,69 @@
 .b-header{
 	width: 100%;
 	display: inline-block;
+	min-height: 4.7rem;
+
+	@media(max-width: $mobile-size){
+		margin-bottom: 2rem;
+	}
 }
 
 .b-nav{
 	.b-nav__nav-left{
 		float: left;
 
-		a img{height: auto; max-width: 10rem;}
+		@media(max-width: $mobile-size)
+		{
+			float: none;
+			text-align: center;
+		}
+
+		a img{
+			height: auto; 
+			max-width: 10rem;
+			margin-top: 1.4rem;
+		}
 	}
 
 	.b-nav__nav-right{
 		float: right;
+
+		@media(max-width: $mobile-size)
+		{
+			float: none;
+			width: 100%;
+			text-align: center; 
+		}
 	}
 
 	.b-nav__nav-elements{
+		margin-top: 2rem;
+		@media(max-width: $mobile-size){
+			margin: 0;
+		}
 		li{
+			@media(max-width: $mobile-size){
+				list-style: none;
+				padding: 0.5rem 0;
+				margin: 0.5rem 3rem 0.5rem 0;
+				display: block;
+			}
 			display: inline-block; 
 			a{text-decoration: none; color: $black; padding: 0 1rem 0 1rem;}
+			a:hover{
+				color: $primary-color;
+				transition: all 0.3s ease;
+			}
+		}
+		li:last-of-type a{
+			border: solid 2px $primary-color;
+			padding: 0.5rem 1.5rem;
+			color: $primary-color;
+		}
+		li:last-of-type a:hover{
+			background-color: $primary-color;
+			color: $white;
+			transition: all 0.3s ease;
 		}
 	}
 }
@@ -26,4 +72,10 @@
 	display: block;
 	max-width: $global-width;
 	margin: 0 auto;
+}
+
+@media(max-width: $tablet-size){
+	.b-nav--header{
+		margin: $mobile-margin;
+	}
 }

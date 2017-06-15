@@ -155,18 +155,25 @@
   </div>
 </section>
 <div class="divider">
+<hr size="0">
 </div>
 <section class="member-section">
   <div class="member-wrapper">
     <h2>Our Members</h2>
-    <img class="member-logo" src="" alt="member-logo" />
+    <?php print render($page['members']); ?>
   </div>
 </section>
 <section class="blog-section">
+<div class="selector"><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>
   <div class="background-one"></div>
   <div class="background-two"></div>
   <div class="blog-wrapper">
     <h2>BLOG</h2>
+    <div class="blog-carousel">
+        <i class="fa fa-chevron-left chevron column-1-12" aria-hidden="true"></i>
+        <?php print render($page['blog']); ?>
+        <i class="fa fa-chevron-right chevron column-1-12" aria-hidden="true"></i>
+    </div>
   </div>
 </section>
 <footer class="b-footer">
@@ -178,6 +185,6 @@
     </ul>
   </div>
   <div class="b-footer--center">
-    <p>This site was built as a collaberation between <span class="b-footer__signature">Manifesto Digital</span> and <span class="b-footer__signature">Compucorp</span></p>
+    <p>This site was built as a collaberation between <a class="b-footer__signature">Manifesto Digital</a> and <a class="b-footer__signature">Compucorp</a></p>
   </div>
 </footer>
